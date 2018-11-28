@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="progress.css">
+<script>
+$( document ).ready(function() {
+    $(".setsize").each(function() {
+        $(this).height($(this).width());
+    });
+});
+$(window).on('resize', function(){
+    $(".setsize").each(function() {
+        $(this).height($(this).width());
+    });
+});
+</script>
+</head>
+<body>
+
+<section class="progress">
+  
+  <div id="circularProgress" class="progress-radial progress-85 setsize">
+    <div class="overlay setsize">
+      <p>85%</p>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+</section>
+
+</body>
+</html>
+
